@@ -408,6 +408,69 @@ main {
     padding-right: 75px;
 }
 
+/* ================ drupal ============= */
+.drupal{
+    padding: 0 0 128px 0;
+}
+.drupal__title {
+    margin-bottom: 48px;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1.21
+}
+
+.drupal__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.drupal__item {
+    padding: 20px 30px 45px 30px;
+    border: 2px solid rgba(69, 77, 82, 0.05);
+    border-radius: 40px;
+    width: 520px;
+    height: 240px;
+    cursor: pointer;
+    background: #FFF;
+    background-image: url('./images/drupal-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+
+    transition: var(--anima-fast);
+
+    &:hover,
+    &:focus {
+
+        background: #3F00FF;
+
+        .drupal__subtitle, .drupal__text{
+            color: #fff;
+        }
+    }
+}
+
+.drupal__img {
+    margin-bottom: 12px;
+}
+
+.drupal__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    transition: 0.3s;
+    margin-bottom: 12px;
+
+}
+
+.drupal__text {
+    font-size: 16px;
+    line-height: 1.25;
+    transition: 0.3s;
+}
+
+
 /* ================ footer ============= */
 .footer {
     background: #3F00FF;
