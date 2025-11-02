@@ -371,9 +371,12 @@ main {
     line-height: 125%;
     color: #333;
 }
+.swiper{
+    position: relative;
+    padding-top: 132px;
+}
 .swiper .swiper-slide {
     width: auto;
-    padding-top: 132px;
 }
 
 .swiper .swiper-button-prev::after,
@@ -382,7 +385,9 @@ main {
 }
 
 .swiper .swiper-button-prev {
-    /* position: absolute; */
+    position: absolute;
+    top: 60%;
+    left: 50px;
     width: 49.44px;
     height: 49px;
 
@@ -392,8 +397,8 @@ main {
     position: absolute;
     width: 49.44px;
     height: 49px;
-    right: 0;
-    z-index: 100;
+    top: 60%;
+    right: 50px;
 }
 
 .swiper .my__wrapper {
@@ -406,14 +411,17 @@ main {
 .footer {
     background: #3F00FF;
     border-radius: 40px 40px 0 0;
+}
+.footer .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .footer__logo--block {
     padding: 40px 30px 55px 15px;
-    max-width: 525px;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
 }
@@ -440,7 +448,7 @@ main {
 }
 
 .footer__list {
-    padding: 0 30px 0 120px;
+    padding: 0 0 0 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -516,7 +524,6 @@ main {
 
 .footer__item-2--block-text {
     color: #FFF;
-    font-family: "Proxima Nova";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -555,4 +562,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 23.22px 44.71px;
+}
+.footer__item-3--list-img-1{
+    width: 94.48px;
+    height: 58.91px;
+}
+.footer__item-3--list-img-2 {
+    width: 195.82px;
+    height: 59.01px;
+}
+.footer__item-3--list-img-3 {
+    width: 206.18px;
+    height: 34.42px;
 }
